@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Thriller</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Thriller"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Thriller"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="1、Spring 1.1、简介(用于面试) 2002年首次推出了Spring框架的雏形 “不要重复发明轮子（Don’t Reinvent Wheel）”,意思是企业中任何一项工作实际上都有人做过，软件领域中有的功能或者是项目，别人已经做过，我们需要用的时候，直接拿来用即可，而不需要重新创造。可以很好的来解释Spring框架。 Spring保持强大的向后兼容性。 解决企业应用开发的复杂性 Sprin"><meta property="og:type" content="blog"><meta property="og:title" content="Thriller"><meta property="og:url" content="http://example.com/2020/09/09/Spring%E5%AD%A6%E4%B9%A0/"><meta property="og:site_name" content="Thriller"><meta property="og:description" content="1、Spring 1.1、简介(用于面试) 2002年首次推出了Spring框架的雏形 “不要重复发明轮子（Don’t Reinvent Wheel）”,意思是企业中任何一项工作实际上都有人做过，软件领域中有的功能或者是项目，别人已经做过，我们需要用的时候，直接拿来用即可，而不需要重新创造。可以很好的来解释Spring框架。 Spring保持强大的向后兼容性。 解决企业应用开发的复杂性 Sprin"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://example.com/Users/louwenbo/Desktop/image-20200909231721960.png"><meta property="og:image" content="http://example.com/Users/louwenbo/Desktop/image-20200909220617974.png"><meta property="og:image" content="http://example.com/Users/louwenbo/Desktop/image-20200909223653923.png"><meta property="article:published_time" content="2020-09-09T14:00:10.995Z"><meta property="article:modified_time" content="2020-09-14T12:54:56.581Z"><meta property="article:author" content="Alfred Lou"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://example.com/Users/louwenbo/Desktop/image-20200909231721960.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2020/09/09/Spring%E5%AD%A6%E4%B9%A0/"},"headline":"Thriller","image":["http://example.com/Users/louwenbo/Desktop/image-20200909231721960.png","http://example.com/Users/louwenbo/Desktop/image-20200909220617974.png","http://example.com/Users/louwenbo/Desktop/image-20200909223653923.png"],"datePublished":"2020-09-09T14:00:10.995Z","dateModified":"2020-09-14T12:54:56.581Z","author":{"@type":"Person","name":"Alfred Lou"},"publisher":{"@type":"Organization","name":"Thriller","logo":{"@type":"ImageObject","url":"http://example.com/img/logo.svg"}},"description":"1、Spring 1.1、简介(用于面试) 2002年首次推出了Spring框架的雏形 “不要重复发明轮子（Don’t Reinvent Wheel）”,意思是企业中任何一项工作实际上都有人做过，软件领域中有的功能或者是项目，别人已经做过，我们需要用的时候，直接拿来用即可，而不需要重新创造。可以很好的来解释Spring框架。 Spring保持强大的向后兼容性。 解决企业应用开发的复杂性 Sprin"}</script><link rel="canonical" href="http://example.com/2020/09/09/Spring%E5%AD%A6%E4%B9%A0/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Thriller" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-09-09T14:00:10.995Z" title="2020/9/9 22:00:10">2020-09-09</time>发表</span><span class="level-item"><time dateTime="2020-09-14T12:54:56.581Z" title="2020/9/14 20:54:56">2020-09-14</time>更新</span><span class="level-item">6 分钟读完 (大约972个字)</span></div></div><div class="content"><h3 id="1、Spring"><a href="#1、Spring" class="headerlink" title="1、Spring"></a>1、Spring</h3><hr>
+<h5 id="1-1、简介-用于面试"><a href="#1-1、简介-用于面试" class="headerlink" title="1.1、简介(用于面试)"></a>1.1、简介(用于面试)</h5><ul>
+<li>2002年首次推出了Spring框架的雏形</li>
+<li>“不要重复发明轮子（Don’t Reinvent Wheel）”,意思是企业中任何一项工作实际上都有人做过，软件领域中有的功能或者是项目，别人已经做过，我们需要用的时候，直接拿来用即可，而不需要重新创造。可以很好的来解释Spring框架。</li>
+<li>Spring保持强大的向后兼容性。</li>
+<li>解决企业应用开发的复杂性</li>
+<li>Spring是一个轻量级控制反转（IoC）和面向切面（AOP）的容器框架</li>
+<li>Spring的理念：使现有的技术更加容易使用</li>
+<li>SSH（Struct2 + Spring + Hibernate）</li>
+<li>SSM(Spring + SpringMVC + Mybatis)</li>
+</ul>
+<h5 id="1-2、优点、缺点"><a href="#1-2、优点、缺点" class="headerlink" title="1.2、优点、缺点"></a>1.2、优点、缺点</h5><ol>
+<li>优点</li>
+</ol>
+<ul>
+<li><p>开源免费框架（容器）</p>
+</li>
+<li><p>轻量级，<u>非侵入式的框架</u></p>
+</li>
+<li><p><u>控制反转（IoC），面向切面编程（AOP）</u></p>
+</li>
+</ul>
+<ol start="2">
+<li>缺点</li>
+</ol>
+<ul>
+<li>发展太久之后，违背了原来的理念，配置非常繁琐。（很多同学都在Spring的配置文件上劝退了）</li>
+</ul>
+<h5 id="1-3、组成"><a href="#1-3、组成" class="headerlink" title="1.3、组成"></a>1.3、组成</h5><p><img src="/Users/louwenbo/Desktop/image-20200909231721960.png" alt="image-20200909231721960"></p>
+<h5 id="1-4、拓展"><a href="#1-4、拓展" class="headerlink" title="1.4、拓展"></a>1.4、拓展</h5><img src="/Users/louwenbo/Desktop/image-20200909220617974.png" alt="image-20200909220617974" style="zoom: 50%;" />
+
+<ul>
+<li>Spring Boot<ul>
+<li>一个快速开发的脚手架</li>
+<li>基于SpringBoot可以快速的开发单个微服务</li>
+<li>约定大于配置（COC）</li>
+</ul>
+</li>
+<li>Spring Cloud<ul>
+<li>SpringCloud是基于SpringBoot实现的</li>
+</ul>
+</li>
+</ul>
+<p>目前很多大公司都在使用SpringBoot进行快速开发，学习SpringBoot的前提，需要完全掌握Spring及SpringMVC</p>
+<h3 id="2、IoC理论推导"><a href="#2、IoC理论推导" class="headerlink" title="2、IoC理论推导"></a>2、IoC理论推导</h3><ol>
+<li>UserDao接口</li>
+<li>UserDaoImpl实现类</li>
+<li>UserService业务接口</li>
+<li>UserServiceImpl业务员实现类</li>
+</ol>
+<ul>
+<li><p>在之前所学习的编程里（例如 JavaSE），用户的需求可能会影响我们原来的代码，我们需要根据用户的需求去修改源代码，如果程序代码量十分大，修改一次的成本代价十分昂贵。</p>
+<ul>
+<li><p>例如在2020年1-4月份期间自己独立开发（Visual Basic）的排版系统，编写的变量，常量非常多，如果遇到一些特殊的需求（因为疫情会改变排版的基本需求），程序不能满足的话，需要回到源代码的层面上去更改数据，难免是麻烦的，甚至在一些设计不周的情况下出现意想不到的bug。</p>
+<img src="/Users/louwenbo/Desktop/image-20200909223653923.png" alt="image-20200909223653923" style="zoom: 50%;" /></li>
+</ul>
+</li>
+<li><p>之前，程序是主动创建对象，控制权在程序员手上</p>
+</li>
+<li><p>使用了一些方法（例如Set注入），程序不再具有主动性，而是变成了被动的接受对象</p>
+</li>
+</ul>
+<p>这种思想，从本质上解决了问题，<u>程序员不用再去管理对象的创建了。系统的耦合性大大降低，可以使开发更加注重在业务的实现上</u>，这是IoC的原型。</p>
+<h3 id="3、IoC本质"><a href="#3、IoC本质" class="headerlink" title="3、IoC本质"></a>3、IoC本质</h3><ul>
+<li><strong>控制反转IoC（Inversion of Control）,是一种设计思想，DI依赖注入（Dependence Injection）是实现IoC的方法。</strong>在没有IoC的程序中，我们使用面向对象编程，对象的创建与对象间的依赖关系完全硬编码在程序中，对象的创建由程序自己控制，控制反转后将对象的创建转移给第三方。</li>
+<li><strong>IoC是Spring框架的核心内容</strong>，使用多种方式完美的实现了IoC，可以使用XML配置，也可以使用注解，新版本的Spring也可以零配置实现IoC。</li>
+<li>采用XML方式配置Bean的时候，Bean的定义信息是和现实分离的，而采用注解的方式可以把两者合为一体，Bean的定义信息直接以注解的形式定义在实现类中，从而达到了零配置的目的。</li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p><a href="http://example.com/2020/09/09/Spring学习/">http://example.com/2020/09/09/Spring学习/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Alfred Lou</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2020-09-09</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2020-09-14</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" href="/" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>爱发电</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/" alt="支付宝"></span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>送我杯咖啡</span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><div class="notification is-danger">You forgot to set the <code>business</code> or <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.</div><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/09/23/Maven%E5%AD%A6%E4%B9%A0/"><i class="level-item fas fa-chevron-left"></i><span class="level-item"> </span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/08/25/Servlet/"><span class="level-item"> </span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://image.baidu.com/search/detail?ct=503316480&amp;z=undefined&amp;tn=baiduimagedetail&amp;ipn=d&amp;word=%E4%B9%94%E6%B2%BB%E5%93%88%E9%87%8C%E6%A3%AE&amp;step_word=&amp;ie=utf-8&amp;in=&amp;cl=2&amp;lm=-1&amp;st=undefined&amp;hd=undefined&amp;latest=undefined&amp;copyright=undefined&amp;cs=830548114,852448812&amp;os=52092508,818149937&amp;simid=830548114,852448812&amp;pn=1&amp;rn=1&amp;di=7169026086108397569&amp;ln=680&amp;fr=&amp;fmq=1675303877604_R&amp;fm=&amp;ic=undefined&amp;s=undefined&amp;se=&amp;sme=&amp;tab=0&amp;width=undefined&amp;height=undefined&amp;face=undefined&amp;is=0,0&amp;istype=0&amp;ist=&amp;jit=&amp;bdtype=0&amp;spn=0&amp;pi=0&amp;gsm=1e&amp;objurl=https%3A%2F%2Fwww.kulemi.com%2Fdl%2Fproject%2Fphoto%2F20210428%2F2021042817145454526853.jpg&amp;rpstart=0&amp;rpnum=0&amp;adpicid=0&amp;nojc=undefined&amp;dyTabStr=MCwzLDYsMiwxLDQsNSw4LDcsOQ%3D%3D" alt="Alfred Lou"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Alfred Lou</p><p class="is-size-6 is-block">Thriller</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>CN-CQ</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">10</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Bilibili" href="https://space.bilibili.com/14621634"><i class="fab fa-bilibili"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-11-23T14:09:58.000Z">2020-11-23</time></p><p class="title"><a href="/2020/11/23/Linux%E5%AD%A6%E4%B9%A0/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-31T11:13:14.000Z">2020-10-31</time></p><p class="title"><a href="/2020/10/31/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-31T09:04:34.000Z">2020-10-31</time></p><p class="title"><a href="/2020/10/31/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-19T09:06:39.000Z">2020-10-19</time></p><p class="title"><a href="/2020/10/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-15T07:12:51.000Z">2020-10-15</time></p><p class="title"><a href="/2020/10/15/%E5%8A%A0%E5%BF%AB%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%8Cwordpress/"> </a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">十一月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/10/"><span class="level-start"><span class="level-item">十月 2020</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/09/"><span class="level-start"><span class="level-item">九月 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/08/"><span class="level-start"><span class="level-item">八月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Thriller" height="28"></a><p class="is-size-7"><span>&copy; 2023 Alfred Lou</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
