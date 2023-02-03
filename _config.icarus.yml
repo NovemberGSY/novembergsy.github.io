@@ -1,8 +1,8 @@
 version: 5.1.0
 variant: default
-logo: /img/logo.svg
+logo: https://i.pinimg.com/474x/ec/bf/66/ecbf66484f8439fd7021f3ef224a50a8.jpg
 head:
-    favicon: /img/favicon.svg
+    favicon: https://i.pinimg.com/474x/d8/11/8e/d8118e162e0478bdea6ecc5bb08f3a8f.jpg
     manifest:
         name: 
         short_name: 
@@ -46,7 +46,7 @@ navbar:
         Archives: /archives
         Categories: /categories
         Tags: /tags
-        About: /about
+        # About: /about
     links:
         Download on GitHub:
             icon: fab fa-github
@@ -61,7 +61,7 @@ footer:
             url: https://creativecommons.org/licenses/by/4.0/
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/NovemberGSY
 article:
     highlight:
         theme: atom-one-light
@@ -115,7 +115,7 @@ sidebar:
         sticky: false
 widgets:
     -
-        position: left
+        position: right
         type: profile
         author: Alfred Lou
         author_title: Thriller
@@ -149,17 +149,17 @@ widgets:
         index: true
         collapsed: true
         depth: 3
+    # -
+    #     position: left
+    #     type: links
+    #     links:
+    #         Hexo: https://hexo.io
+    #         Bulma: https://bulma.io
     -
-        position: left
-        type: links
-        links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
-    -
-        position: left
+        position: right
         type: categories
     -
-        position: left
+        position: right
         type: recent_posts
     -
         position: left
@@ -170,22 +170,17 @@ widgets:
         order_by: name
         amount: 
         show_count: true
-    -
-        position: left
-        type: subscribe_email
-        description: 
-        feedburner_id: ''
-    -
-        position: left
-        type: adsense
-        client_id: ''
-        slot_id: ''
-    -
-        position: left
-        type: followit
-        description: 
-        action_url: ''
-        verification_code: ''
+    # -
+    #     position: left
+    #     type: subscribe_email
+    #     description: 
+    #     feedburner_id: ''
+    # -
+    #     position: left
+    #     type: followit
+    #     description: 
+    #     action_url: ''
+    #     verification_code: ''
 plugins:
     animejs: true
     back_to_top: true
