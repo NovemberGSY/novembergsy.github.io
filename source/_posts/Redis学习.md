@@ -1,3 +1,7 @@
+---
+title: Redis 学习
+category:  Java
+---
 ### Redis学习
 
 #### 1、Redis是什么？

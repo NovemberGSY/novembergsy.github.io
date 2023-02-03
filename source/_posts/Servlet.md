@@ -1,3 +1,7 @@
+---
+title: Servlet
+category: Java
+---
 ### **Servlet**
 
 - Servlet主要用于处理客户端传来的HTTP请求，并返回一个响应，它能够处理的请求有doGet()和doPost()等方法。
